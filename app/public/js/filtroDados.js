@@ -1,4 +1,4 @@
-function validarDados(){
+function filtroDados(){
   if(document.getElementById('ano').value === ''){
     document.getElementById('ano').name = ''
   }
