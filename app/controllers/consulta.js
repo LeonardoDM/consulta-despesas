@@ -10,25 +10,7 @@ module.exports.consultar = function(application, req, res){
 
 module.exports.filtro = function(application, req, res){
 
-	const dadosForm = {};
-	if(req.query.ano){
-		dadosForm.ano = req.query.ano
-	}
-	if(req.query.mes){
-		dadosForm.mes = req.query.mes
-	}
-	if(req.query.dia){
-		dadosForm.dia = req.query.dia
-	}
-	if(req.query.tipo){
-		dadosForm.tipo = req.query.tipo
-	}
-	if(req.query.descricao){
-		dadosForm.descricao = req.query.descricao
-	}
-	if(req.query.valor){
-		dadosForm.valor = req.query.valor
-	}
+	const dadosForm = req.query;
 	
 	const connection = application.config.dbConnection;
 	const DespesaDAO = new application.app.models.DespesaDAO(connection);
