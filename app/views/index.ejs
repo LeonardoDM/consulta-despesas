@@ -16,15 +16,13 @@
 
     <script>
       function chamarAlert(){ 
-        if (alert === true) {
-          window.alert('Despesa cadastrada com sucesso!');
-        }
+        window.alert('Despesa cadastrada com sucesso!');
       }
     </script>
 
 	</head>
 
-  <body onload="chamarAlert()">
+  <body>
 
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-5">
@@ -42,7 +40,7 @@
               <a class="nav-link" href="/">Cadastro</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="consulta">Consulta</a>
+              <a class="nav-link" href="/consulta">Consulta</a>
             </li>
           </ul>
           
@@ -66,7 +64,7 @@
           <h1 class="display-4">Registro de nova despesa</h1>
         </div>
       </div>
-    <form action="/cadastrar" method="post">
+    <form action="/cadastrar" method="post" onsubmit="chamarAlert()">
       <div class="row mb-2">
         <div class="col-md-2">
           <select class="form-control" id="ano" name="ano">
