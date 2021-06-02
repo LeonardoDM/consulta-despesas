@@ -1,14 +1,17 @@
 # Consulta de Despesas
 
-A simple personal expense register platform (NodeJS + MongoDB)
+https://user-images.githubusercontent.com/27246482/120490104-863f4d80-c38e-11eb-9e36-7311ea06618a.mp4
 
-### Requirements
+Uma plataforma simples para registro de despesas pessoais (NodeJS + MongoDB)
+
+### Requisitos
 
 - NodeJS v10+
-- MongoDB running on local instance
+- MongoDB executando localmente
 
-### Running
+### Executando o projeto
 
-- Install dependencies - `npm i`
-- Run project - `node app`
-- Go to page - `localhost:3000`
+- Instale as dependências - `npm i`
+- Execute o MongoDB
+- Execute o projeto - `node app`
+- Vá até a página - `localhost:3000`
